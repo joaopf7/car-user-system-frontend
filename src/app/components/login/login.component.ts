@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Credentials } from 'src/app/models/credentials';
 
 
@@ -20,12 +21,13 @@ export class LoginComponent implements OnInit {
   password = new FormControl(null, Validators.minLength(3));
 
   constructor(
+    private toast: ToastrService,
     private router: Router) { }
 
   ngOnInit(): void { }
 
   logar() {
-    
+      this.toast.success('Logou')
       this.router.navigate([''])
     
   }
