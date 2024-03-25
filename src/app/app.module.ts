@@ -35,6 +35,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './inteceptors/auth.interceptor';
 import { UserCreateComponent } from './components/users/user-create/user-create.component';
 import { UserUpdateComponent } from './components/users/user-update/user-update.component';
+import { UserDeleteComponent } from './components/users/user-delete/user-delete.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { UserUpdateComponent } from './components/users/user-update/user-update.
     UserListComponent,
     LoginComponent,
     UserCreateComponent,
-    UserUpdateComponent
+    UserUpdateComponent,
+    UserDeleteComponent
   ],
   imports: [
     BrowserModule,
