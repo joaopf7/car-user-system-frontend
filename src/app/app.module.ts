@@ -38,6 +38,7 @@ import { UserUpdateComponent } from './components/users/user-update/user-update.
 import { UserDeleteComponent } from './components/users/user-delete/user-delete.component';
 import { CarListComponent } from './components/cars/car-list/car-list.component';
 import { CarCreateComponent } from './components/cars/car-create/car-create.component';
+import { CarUpdateComponent } from './components/cars/car-update/car-update.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { CarCreateComponent } from './components/cars/car-create/car-create.comp
     UserUpdateComponent,
     UserDeleteComponent,
     CarListComponent,
-    CarCreateComponent
+    CarCreateComponent,
+    CarUpdateComponent
   ],
   imports: [
     BrowserModule,
