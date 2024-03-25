@@ -33,6 +33,7 @@ import { UserListComponent } from './components/users/user-list/user-list.compon
 import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './inteceptors/auth.interceptor';
+import { UserCreateComponent } from './components/users/user-create/user-create.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AuthInterceptorProvider } from './inteceptors/auth.interceptor';
     HomeComponent,
     HeaderComponent,
     UserListComponent,
-    LoginComponent
+    LoginComponent,
+    UserCreateComponent
   ],
   imports: [
     BrowserModule,
