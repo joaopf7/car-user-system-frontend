@@ -17,7 +17,6 @@ export class UserCreateComponent implements OnInit {
     firstName:     '',
     lastName:      '',
     email:    '',
-    birthday: '',
     login:    '',
     password:    '',
     phone:    ''
@@ -25,7 +24,6 @@ export class UserCreateComponent implements OnInit {
 
   firstName: FormControl =  new FormControl(null, Validators.minLength(3));
   lastName: FormControl =  new FormControl(null, Validators.minLength(3));
-  birthday: FormControl =       new FormControl(null, Validators.required);
   email: FormControl =        new FormControl(null, Validators.email);
   login: FormControl =        new FormControl(null, Validators.required);
   password: FormControl = new FormControl(null, Validators.minLength(3));
@@ -55,7 +53,7 @@ export class UserCreateComponent implements OnInit {
   
   validaCampos(): boolean {
     return this.firstName.valid && this.lastName.valid
-     && this.email.valid && this.birthday.valid && this.password.valid && this.phone.valid
+     && this.email.valid && this.password.valid && this.phone.valid
   }
 
 }

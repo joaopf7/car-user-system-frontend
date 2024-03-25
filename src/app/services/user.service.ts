@@ -19,12 +19,12 @@ export class UserService {
     return this.http.get<User[]>(`${API_CONFIG.baseUrl}/users`);
   }
 
-  create(tecnico: User): Observable<User> {
-    return this.http.post<User>(`${API_CONFIG.baseUrl}/users`, tecnico);
+  create(user: User): Observable<User> {
+    return this.http.post<User>(`${API_CONFIG.baseUrl}/users`, user);
   }
 
-  update(tecnico: User): Observable<User> {
-    return this.http.put<User>(`${API_CONFIG.baseUrl}/users/${tecnico.id}`, tecnico);
+  update(user: User): Observable<User> {
+    return this.http.put<User>(`${API_CONFIG.baseUrl}/users/${user.id}`, user);
   }
 
   delete(id: any): Observable<User> {
