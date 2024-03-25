@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "cross-env NODE_OPTIONS=-- openssl-legacy-provider ng serve",
-    "build": "ng build",
+    "build": "cross-env NODE_OPTIONS=-- openssl-legacy-provider ng build",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,
