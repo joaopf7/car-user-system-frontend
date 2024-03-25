@@ -36,6 +36,7 @@ import { AuthInterceptorProvider } from './inteceptors/auth.interceptor';
 import { UserCreateComponent } from './components/users/user-create/user-create.component';
 import { UserUpdateComponent } from './components/users/user-update/user-update.component';
 import { UserDeleteComponent } from './components/users/user-delete/user-delete.component';
+import { CarListComponent } from './components/cars/car-list/car-list.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { UserDeleteComponent } from './components/users/user-delete/user-delete.
     LoginComponent,
     UserCreateComponent,
     UserUpdateComponent,
-    UserDeleteComponent
+    UserDeleteComponent,
+    CarListComponent
   ],
   imports: [
     BrowserModule,

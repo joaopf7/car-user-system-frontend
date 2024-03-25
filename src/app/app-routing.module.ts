@@ -8,6 +8,7 @@ import { AuthGuard } from './auth/auth.guard';
 import { UserCreateComponent } from './components/users/user-create/user-create.component';
 import { UserUpdateComponent } from './components/users/user-update/user-update.component';
 import { UserDeleteComponent } from './components/users/user-delete/user-delete.component';
+import { CarListComponent } from './components/cars/car-list/car-list.component';
 
 const routes: Routes = [
   {path:'login', component: LoginComponent},
@@ -16,7 +17,9 @@ const routes: Routes = [
     {path:'users', component:UserListComponent},
     {path:'users/create', component:UserCreateComponent},
     {path:'users/update/:id', component:UserUpdateComponent},
-    {path:'users/delete/:id', component:UserDeleteComponent}
+    {path:'users/delete/:id', component:UserDeleteComponent},
+
+    {path:'cars', component: CarListComponent}
   ]}
 ];
 
