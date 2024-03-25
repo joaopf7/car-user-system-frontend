@@ -49,9 +49,13 @@ export class CarCreateComponent implements OnInit {
       this.toastService.success('Carro criado com sucesso', 'Novo Carro');
       this.router.navigate(['cars']);
     }, ex => {
-      console.log(ex);
-      
-      this.toastService.error(ex.error.error);
+      if(ex.error.errors) {
+        ex.error.errors.forEach(element => {
+          this.toastService.error(element.message);
+        });
+      } else {
+        this.toastService.error(ex.error.message);
+      }
     })
   }
 
